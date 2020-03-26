@@ -1,0 +1,17 @@
+[root@web1 script]# vim 9x9v2.sh
+#! /bin/bash
+#打印九九乘法表
+echo "=========九九乘法表========"
+for i in `seq 1 9`
+do
+        for j in `seq 1 $i`
+        do
+        echo -n -e "${i}x${j}=$[$i*$j]\t"
+        done
+        echo
+done
+
+
+
+
+
